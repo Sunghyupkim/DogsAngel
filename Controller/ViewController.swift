@@ -21,8 +21,9 @@ class ViewController: UIViewController {
         Dog(name: "후추", breed: "실버푸들", sex: "여"),
         Dog(name: "우리", breed: "말티즈", sex: "여"),
         Dog(name: "다니", breed: "비숑", sex: "여"),
-        Dog(name: "마늘쫑", breed: "???", sex: "????"),
-        Dog(name: "구찌", breed: "비숑", sex: "여")
+        Dog(name: "마늘쫑", breed: "???", sex: "여"),
+        Dog(name: "킹", breed:"킹찰스 스패니얼" , sex: "남")
+        
     ]
     
     override func viewDidLoad() {
@@ -32,8 +33,14 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        tableViewUI()
     }
-
+    
+    
+    func tableViewUI() {
+        tableView.separatorStyle = .none
+        tableView.rowHeight = 90
+    }
 
 }
 

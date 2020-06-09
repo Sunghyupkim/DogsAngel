@@ -4,7 +4,6 @@
 //
 //  Created by Sunghyup Kim on 2020/06/08.
 //  Copyright © 2020 SunghyupKim. All rights reserved.
-//
 
 import UIKit
 
@@ -17,8 +16,8 @@ class CustomTableViewCell: UITableViewCell {
     
    
     func setupCellUI(){
-        profileImage.layer.cornerRadius = 35
-      
+        profileImage.layer.cornerRadius = 25
+        
         
     }
 }

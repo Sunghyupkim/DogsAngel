@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A109F04F248EA2700088FCFD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109F04E248EA2700088FCFD /* Model.swift */; };
+		A109F056248FCE410088FCFD /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109F055248FCE410088FCFD /* ContentViewController.swift */; };
 		A1EBB58A248CEEF500AFA456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBB589248CEEF500AFA456 /* AppDelegate.swift */; };
 		A1EBB58C248CEEF500AFA456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBB58B248CEEF500AFA456 /* SceneDelegate.swift */; };
 		A1EBB58E248CEEF500AFA456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBB58D248CEEF500AFA456 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		06298FA15933E6F22D5476B0 /* Pods-tableViewey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableViewey.release.xcconfig"; path = "Target Support Files/Pods-tableViewey/Pods-tableViewey.release.xcconfig"; sourceTree = "<group>"; };
 		A109F04E248EA2700088FCFD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A109F055248FCE410088FCFD /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		A1EBB586248CEEF500AFA456 /* tableViewey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EBB589248CEEF500AFA456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EBB58B248CEEF500AFA456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,10 +56,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A109F050248F8FED0088FCFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A109F04E248EA2700088FCFD /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A109F051248F90000088FCFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1EBB58D248CEEF500AFA456 /* ViewController.swift */,
+				A109F055248FCE410088FCFD /* ContentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A109F052248F90360088FCFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1EBB59F248D4C2100AFA456 /* CustomTableViewCell.swift */,
+				A1EBB58F248CEEF500AFA456 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1EBB57D248CEEF500AFA456 = {
 			isa = PBXGroup;
 			children = (
-				A1EBB588248CEEF500AFA456 /* tableViewey */,
+				A109F050248F8FED0088FCFD /* Model */,
+				A109F052248F90360088FCFD /* View */,
+				A109F051248F90000088FCFD /* Controller */,
+				A1EBB588248CEEF500AFA456 /* Supporting Files */,
 				A1EBB587248CEEF500AFA456 /* Products */,
 				E54D6CD18917FE4A7307C819 /* Pods */,
 				670D465EC2D102B59A7D1B70 /* Frameworks */,
@@ -72,20 +103,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1EBB588248CEEF500AFA456 /* tableViewey */ = {
+		A1EBB588248CEEF500AFA456 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				A1EBB589248CEEF500AFA456 /* AppDelegate.swift */,
 				A1EBB58B248CEEF500AFA456 /* SceneDelegate.swift */,
-				A1EBB58D248CEEF500AFA456 /* ViewController.swift */,
-				A1EBB59F248D4C2100AFA456 /* CustomTableViewCell.swift */,
-				A109F04E248EA2700088FCFD /* Model.swift */,
-				A1EBB58F248CEEF500AFA456 /* Main.storyboard */,
 				A1EBB592248CEEF600AFA456 /* Assets.xcassets */,
 				A1EBB594248CEEF600AFA456 /* LaunchScreen.storyboard */,
 				A1EBB597248CEEF600AFA456 /* Info.plist */,
 			);
-			path = tableViewey;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E54D6CD18917FE4A7307C819 /* Pods */ = {
@@ -216,6 +243,7 @@
 				A1EBB58E248CEEF500AFA456 /* ViewController.swift in Sources */,
 				A1EBB5A0248D4C2100AFA456 /* CustomTableViewCell.swift in Sources */,
 				A1EBB58A248CEEF500AFA456 /* AppDelegate.swift in Sources */,
+				A109F056248FCE410088FCFD /* ContentViewController.swift in Sources */,
 				A1EBB58C248CEEF500AFA456 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
-				INFOPLIST_FILE = tableViewey/Info.plist;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
-				INFOPLIST_FILE = tableViewey/Info.plist;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
